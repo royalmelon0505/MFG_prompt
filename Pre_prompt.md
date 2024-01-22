@@ -38,9 +38,9 @@ It means that the coordinate of ego car is:
 You need to consider the Historical and Future Trajectory as this format to avoid generate wrong trajectory that is disordered in time 
 
 ## Task
--Thought Process:
+- Thought Process:
 Tell the difference between the new AV-Scene and original input AV-Scene
--New AV-Scene Generation:
+- New AV-Scene Generation:
 Generate new ego vehicle trajectories based on your analysis
 
 ## Input
@@ -49,14 +49,14 @@ Generate new ego vehicle trajectories based on your analysis
 There is an example of "Metadata about original AV-Scene":
 ```
 Perception and Prediction:
--truck: at (-2.22,33.98), moving to (-6.21,53.29)
--car: at (-0.39,17.22), moving to (-3.34,40.98)
--car: at (19.80,14.22), moving to (19.80,14.22)
+- truck: at (-2.22,33.98), moving to (-6.21,53.29)
+- car: at (-0.39,17.22), moving to (-3.34,40.98)
+- car: at (19.80,14.22), moving to (19.80,14.22)
 
 Ego-States:
--Velocity(v_y):(8.40)
--Acceleration(a_y):(-1.69)
--Heading Angular Velocity(v_yaw):(0.00)
+- Velocity(v_y):(8.40)
+- Acceleration(a_y):(-1.69)
+- Heading Angular Velocity(v_yaw):(0.00)
 
 Historical Trajectory (last 3 seconds):
 [(1.76,-20.05), (1.76,-20.05), (1.39,-16.62), (1.03,-12.25), (0.66,-7.87), (0.29,-3.35)]
@@ -72,11 +72,11 @@ Mission Goal: GO STRAIGHT
 
 ### 1.Chain of Thoughts:
 (Please list all the points mentioned in the Chain of Thoughts, together with your answers.)
--What objects are in the scenario?
--What the Mission Goal of ego car?
--What type of possible interactive behavior will occur in the scenario?
--Whether the vehicles in the scenario will collide with each other?
--What the major difference in Historical Trajectory and Future Trajectory in generated AV-Scene from the original input Metadata?
+- What objects are in the scenario?
+- What the Mission Goal of ego car?
+- What type of possible interactive behavior will occur in the scenario?
+- Whether the vehicles in the scenario will collide with each other?
+- What the major difference in Historical Trajectory and Future Trajectory in generated AV-Scene from the original input Metadata?
 
 ### 2.Generated New AV-Scene
 - Metadata about new AV-Scene
@@ -94,7 +94,9 @@ There is some requirement when generating New AV-Scene:
 There is an example of Input and Output, You should strictly follow the format of Output:
 
 Input:
+
 """
+
 Description of new AV-Scene:
 The ego car moves slightly faster than before.
 Properly slightly adjust every waypoint of both the Future and Historical Trajectory based on original AV-scenes to meet the change of higher speed and make Trajectory smoothe.
@@ -121,7 +123,9 @@ Mission Goal: TURN LEFT
 """
 
 Output:
+
 """
+
 Example268:
 ### Chain of Thoughts:
 - The objects in the scenario is only the ego car.
@@ -135,9 +139,9 @@ Example268:
 Perception and Prediction:
 
 Ego-States:
--Velocity(vy):(3.00)
--Acceleration(ay):(0.05)
--Heading Angular Velocity(v_yaw):(0.11)
+- Velocity(vy):(3.00)
+- Acceleration(ay):(0.05)
+- Heading Angular Velocity(v_yaw):(0.11)
 
 Historical Trajectory (last 3 seconds):
 [(-0.87,-8.31), (-0.63,-7.49), (-0.39,-5.95), (-0.15,-4.41), (0.06,-2.94), (0.03,-1.47)]
