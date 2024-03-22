@@ -34,34 +34,33 @@ Mission Goal: <font color=Blue>GO STRAIGHT</font>
 ## Output:
 
 ### Chain of Thoughts:
-- The objects in the scenario are cars and a truck around the ego car.
-- The Mission Goal of the ego car is to GO STRAIGHT.
-- There could be interactive behavior in the scenario as there are multiple other vehicles present.
-- The vehicles in the scenario should not collide with each other.
-- The major difference in the Historical Trajectory and Future Trajectory in the generated AV-Scene from the original input Metadata is the increased speed of the ego car, resulting in adjusted waypoints for both trajectories.
+- The core of generation is (moving slightly faster) when ego car is (TURN LEFT). So the velocity of ego car in new AV-Scene is changed to (7.5)m/s from (7.18)m/s in the original AV-Scene. 
+- The change of velocity will influence the Trajectory. As the velocity is increased, when T=-3s, the ego car has to cover a longer distance from the original position of (-12.64,-17.32), so the Start Point of Historical Trajectory is changed to (-13.50,-20.31) in the new AV-Scene. Similarly, when T=3s, the End Point of Future Trajectory is changed to (-9.50,20.11) from the original (-7.91,18.11). 
+- There are 4 other vehicles in the new AV-Scene. Their coordinates might need to be adjusted to avoid collisions and accommodate the change in the ego car's trajectory. 
 
-### Generated New AV-Scene:
-
-''' 
-
+### Generated New AV-Scene
+```
 Perception and Prediction:
-- car: at <font color=Blue>(0.77,12.09)</font>, moving to <font color=Blue>(0.95,24.49)</font>
-- truck: at <font color=Blue>(0.62,36.79)</font>, moving to <font color=Blue>(-0.37,60.33)</font>
-- car: at <font color=Blue>(0.78,23.76)</font>, moving to <font color=Blue>(1.32,40.57)</font>
+-car: at (-13.09,22.50), moving to (-31.00,35.87)
+-car: at (-0.70,15.53), moving to (-9.98,25.02)
+-truck: at (4.61,1.76), moving to (-0.53,16.55)
+-car: at (-3.73,12.67), moving to (-18.57,27.12)
 
 Ego-States:
-- Velocity(vy):<font color=Blue>(8.00)</font>
-- Acceleration(ay):<font color=Blue>(-1.30)</font>
-- Heading Angular Velocity(v\_yaw):<font color=Blue>(0.14)</font>
+-Velocity(vy):(7.5)
+-Acceleration(ay):(-0.01)
+-Heading Angular Velocity(v_yaw):(0.53)
+
+Start Point of Historical Trajectory (T=-3): (-13.50,-20.31)
+
+End Point of Future Trajectory (T=3): (-9.50,20.11)
+
+Mission Goal: TURN LEFT
 
 Historical Trajectory (last 3 seconds):
-
-[<font color=Blue>(-4.97,-29.78), (-3.61,-23.54), (-2.33,-17.91), (-1.11,-12.48), (-0.16,-8.00), (0.22,-4.80)</font>]
+[(-13.55,-20.20), (-9.67,-17.54), (-6.24,-14.20), (-3.36,-11.23), (-1.36,-7.53), (-0.20,-3.90)]
 
 Future Trajectory (future 3 seconds):
+[(-0.57,3.86), (-1.56,7.45), (-3.04,10.83), (-4.99,14.16), (-7.23,17.46), (-9.53,20.41)]
+```
 
-[<font color=Blue>(-0.68,6.05), (-0.85,9.23), (-1.14,12.99), (-1.29,16.11), (-0.78,19.40), (-0.41,22.34)</font>]
-
-Mission Goal: <font color=Blue>GO STRAIGHT</font>
-
-'''
