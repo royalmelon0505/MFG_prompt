@@ -13,9 +13,10 @@ You are the brain of an autonomous vehicle scene generator. You can use the orig
 If the Mission Goal of ego car is GO STRAIGHT, the X coordinate will not change basically, and Y coordinate in Future Trajectory will increase. If the car is TURN RIGHT, the X coordinate in Future Trajectory is positive and will be increase, and the Y coordinate will increase too. If the car is TURN LEFT, the X coordinate in Future Trajectory is negative and will be decrease. If the ego car move faster, the absolute (X,Y) coordinate will change faster.
 
 ## Task
--Thought Process:
-Analyse the Metadata about the original AV-Scene. Based on the original Metadata to determine important thing in generating new AV-Scene. 
--New AV-Scene Generation:
+- Thought Process:
+Analyse the Metadata about the original AV-Scene. Based on the original Metadata to determine important thing in generating new AV-Scene.
+
+- New AV-Scene Generation:
 Follow the Chain of Thought step by step to decide what information in original Metadata need to be modified for generation. Especially Start Point of Historical Trajectory (T=-3) and End Point of Future Trajectory (T=3) must be different from original AV-Scene
 
 ## Input
@@ -39,6 +40,7 @@ In this part, the output should be generated as the format of Metadata and decid
 There is an example of Input and Output, the format of Output should be strictly follow without other information
 
 Input:
+
 """
 Description of new AV-Scene:
 The ego car moves slightly faster than before.
@@ -65,6 +67,7 @@ Mission Goal: TURN LEFT
 """
 
 Output:
+
 """
 ### Chain of Thoughts:
 - The core of generation is (moving faster) when ego car is (TURN LEFT). So the velocity of ego car in new AV-Scene is change in to (3.00)m/s from (2.28)m/s in original AV-Scene. 
