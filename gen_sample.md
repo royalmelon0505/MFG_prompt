@@ -2,34 +2,30 @@
 
 **Description of new AV-Scene:**
 
-<font color=Red>I hope the ego car can move faster</font>
-
+The ego car moves slightly faster than before.
 
 **Metadata about original AV-Scene:**
 
-'''
-
+```
 Perception and Prediction:
-- car: at <font color=Blue>(0.74,10.89)</font>, moving to <font color=Blue>(0.84,22.13)</font>
-- truck: at <font color=Blue>(0.56,37.25)</font>, moving to <font color=Blue>(-0.39,60.77)</font>
-- car: at <font color=Blue>(0.73,23.43)</font>, moving to <font color=Blue>(1.03,39.96)</font>
+-car: at (-13.09,22.50), moving to (-31.00,35.87)
+-car: at (-0.70,15.53), moving to (-9.98,25.02)
+-truck: at (4.61,1.76), moving to (-0.53,16.55)
+-car: at (-3.73,12.67), moving to (-18.57,27.12)
 
 Ego-States:
-- Velocity(vy):<font color=Blue>(6.79)</font>
-- Acceleration(ay):<font color=Blue>(-1.30)</font>
-- Heading Angular Velocity(v\_yaw):<font color=Blue>(0.14)</font>
+-Velocity(vy):(7.18)
+-Acceleration(ay):(-0.01)
+-Heading Angular Velocity(v_yaw):(0.53)
 
 Historical Trajectory (last 3 seconds):
-
-[<font color=Blue>(-4.36,-26.15), (-3.17,-20.79), (-2.05,-15.75), (-0.99,-11.04), (-0.11,-7.11), (0.03,-3.39)</font>]
+[(-12.64,-17.32), (-9.62,-14.69), (-7.29,-12.44), (-5.10,-10.04), (-2.77,-6.93), (-0.97,-3.82)]
 
 Future Trajectory (future 3 seconds):
+[(-0.41,3.49), (-1.25,6.90), (-2.38,9.86), (-3.95,12.76), (-5.79,15.51), (-7.91,18.11)]
 
-[<font color=Blue>(-0.35,3.05), (-0.44,5.81), (-0.59,8.59), (-0.67,10.69), (-0.41,12.99), (-0.20,14.96)</font>]
-
-Mission Goal: <font color=Blue>GO STRAIGHT</font>
-
-'''
+Mission Goal: TURN LEFT
+```
 
 ## Output:
 
