@@ -62,3 +62,8 @@ Future Trajectory (future 3 seconds):
 [(-0.57,3.86), (-1.56,7.45), (-3.04,10.83), (-4.99,14.16), (-7.23,17.46), (-9.53,20.41)]
 ```
 
+#Visual Results (Irrelevent with LLM Prompt)
+The distribution of the generated samples and the original samples used for generation after selection is visualized in the Future Position is the fig below. We select and generate 255 samples for the overall dataset and 30 samples for the special dataset. The left figure shows the samples generated for the overall dataset and the right figure shows the samples generated for the special dataset. Ori represents the original selected samples, while Gen represents the generated samples.
+![image](https://github.com/royalmelon0505/test/assets/89434031/01930f49-134f-4686-991c-45af29499a6f)
+![image](https://github.com/royalmelon0505/test/assets/89434031/694cb265-8970-465a-a568-a40243f5cb86)
+
