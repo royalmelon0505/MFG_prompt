@@ -39,6 +39,7 @@ In this part, the output should be generated as the format of Metadata and decid
 There is an example of Input and Output, the format of Output should be strictly follow without other information
 
 Input:
+
 """
 Description of new AV-Scene:
 I hope the other surrounding cars can move faster, and make the ego car move slower
@@ -65,6 +66,7 @@ Mission Goal: TURN LEFT
 """
 
 Output:
+
 """
 ### Chain of Thoughts:
 - The core of generation is that ( the other vehicles become faster ) while the self vehicle ( slows down ) in the ( left turn ). So the velocity of ego car in new AV-Scene is change in to (1.50)m/s from (2.28)m/s in original AV-Scene. 
