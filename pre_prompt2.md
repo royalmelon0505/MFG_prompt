@@ -69,9 +69,9 @@ Output:
 
 """
 ### Chain of Thoughts:
-_**- The core of generation is that ( the other vehicles become faster ) while the self vehicle ( slows down ) in the ( left turn ). So the velocity of ego car in new AV-Scene is change in to (1.50)m/s from (2.28)m/s in original AV-Scene. 
-- The change of velocity will influence the Trajectory. Because the velocity is decreasd, when T=-3s, ego car have to move shorter distance than (-0.58,-6.93) in original AV-Scene, so the Start Point of Historical Trajectory is (-0.38,-4.57) in new AV-Scene. Similarly, when T=3s, the End Point of Future Trajectory is change to (-3.05,4.79) from (-4.61,7.26). 
-- There are 2 other vehicles in the new AV-Scene. Since there will be no collision, the coordinate change of the vehicles satisfy the requirement of (faster speeds)**_
+- _**The core of generation is that ( the other vehicles become faster ) while the self vehicle ( slows down ) in the ( left turn ). So the velocity of ego car in new AV-Scene is change in to (1.50)m/s from (2.28)m/s in original AV-Scene.**_ 
+- _**The change of velocity will influence the Trajectory. Because the velocity is decreasd, when T=-3s, ego car have to move shorter distance than (-0.58,-6.93) in original AV-Scene, so the Start Point of Historical Trajectory is (-0.38,-4.57) in new AV-Scene. Similarly, when T=3s, the End Point of Future Trajectory is change to (-3.05,4.79) from (-4.61,7.26).**_
+- _**There are 2 other vehicles in the new AV-Scene. Since there will be no collision, the coordinate change of the vehicles satisfy the requirement of (faster speeds)**_
 ### Generated New AV-Scene
 ```
 Perception and Prediction:
