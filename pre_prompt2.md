@@ -42,7 +42,7 @@ Input:
 
 """
 Description of new AV-Scene:
-<span style="background-color:yellow">I hope the other surrounding cars can move faster, and make the ego car move slower</span>
+_** I hope the other surrounding cars can move faster, and make the ego car move slower **_
 
 Metadata about original AV-Scene:
 ```
