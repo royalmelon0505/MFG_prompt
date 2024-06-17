@@ -9,4 +9,6 @@ The `gen_sample.md` gives a demo of the inputs and outputs of the actual generat
 
 `pre_prompt2.md` and `pre_prompt3.md` are other Pre-prompts. 
 
-The generation requirement of `pre_prompt2.md` is **I hope the other surrounding cars can move faster, and make the ego car move slower.**  The generation requirement of `pre_prompt3.md` is **I hope the ego vehicle can change lane to the left.**
+The generation requirement of `pre_prompt2.md` is **I hope the other surrounding cars can move faster, and make the ego car move slower.** 
+
+The generation requirement of `pre_prompt3.md` is **I hope the ego vehicle can change lane to the left.**
