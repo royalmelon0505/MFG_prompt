@@ -2,7 +2,7 @@
 
 Here is the Prompt about the Sample Generation with LMM in this paper
 
-![image](https://github.com/royalmelon0505/MFG_prompt/assets/89434031/00c9366a-fd87-4713-95f6-0750a268cd9f)
+![image](/fig/Prompt_Framework.png)
 
 
 The `pre_prompt.md` reveals how to describe the tasks involved before actually input MetaData so that LLM can understand the requirements for generating new MetaData. The generation requirement is `The ego car moves slightly faster than before.`
