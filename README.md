@@ -17,3 +17,5 @@ How to write prompts for different scenario generation tasks is discussed in `mo
 The generation requirement of `pre_prompt2.md` is **I hope the other surrounding cars can move faster, and make the ego car move slower.** 
 
 The generation requirement of `pre_prompt3.md` is **I hope the ego vehicle can change lane to the left.**
+
+`LLM_efficiency.md` is the discussion about the LLM efficiency
