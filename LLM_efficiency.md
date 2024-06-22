@@ -1,5 +1,11 @@
 Discussion about LLM efficiency:
 
+we use gpt-3.5-turbo-1106 and using the OpenAI API interface to test the efficiency of sample generation. We randomly input 198 samples, and the generation time of LLM for each sample is：
+
+Under normal circumstances, the efficiency of LLM's sample generation is about 5-15s per sample, excluding the anomaly which cost extra long time, the average generation time is 9.75s. 
+
+Of these 198 input samples, LLM generate 166 samples ( 83.8% ) as requested. It means that the generated samples correctly contained the state, trajectory, and start point, and there were no problems such as missing a bracket. Of these 166 samples, 139 are reasonable. The determination of whether a generated sample is reasonable is based on the four post-processing rules in the manuscript. Given that it can be generated as requested, the probability that a generated sample is reasonable is about 83.7%. Overall, the probability that the LLM generates a reasonable sample is 70.2%. It is worth to notice that the probability to generate reasonable samples before the addition of the MLP is about 20%. 
+
 Although LLM is relatively inefficient for generating samples, its overall time consumption is not particularly large because we select some samples for generation instead of using overall samples.
 In addition, LLM has the following advantages: 
 
