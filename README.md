@@ -18,4 +18,4 @@ The generation requirement of `pre_prompt2.md` is **I hope the other surrounding
 
 The generation requirement of `pre_prompt3.md` is **I hope the ego vehicle can change lane to the left.**
 
-`LLM_efficiency.md` is the discussion about the LLM efficiency
+`LLM_efficiency.md` is the discussion about the efficiency of LLM generation
