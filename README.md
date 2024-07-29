@@ -1,5 +1,7 @@
 # Mixing Left and Right-Hand Driving Data in a Hierarchical Framework with LLM Generation
 
+Jiazhe Guo, Cheng Chang, Zhiheng Li, Li Li^{*}
+
 Here is the Prompt about the Sample Generation with LMM in this paper
 
 ![image](/fig/Prompt_Framework.png)
